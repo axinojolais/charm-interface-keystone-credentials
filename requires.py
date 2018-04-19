@@ -27,7 +27,7 @@ class KeystoneRequires(RelationBase):
                       'credentials_project', 'credentials_username',
                       'credentials_password', 'credentials_project_id',
                       'api_version', 'auth_host', 'auth_protocol', 'auth_port',
-                      'region', 'ca_cert', 'https_keystone']
+                      'region', 'domain', 'ca_cert', 'https_keystone']
 
     @hook('{requires:keystone-credentials}-relation-joined')
     def joined(self):
